@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+}
+html {
+  font-family: sans-serif;
+}
+/*------------------------------------------------------------------------------------------------------*/
+                                           
+                                          /* section one*/
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+.container .head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  width: 100%;
+  z-index: 2;
+}
+.container .head img {
+  width: 13%;
+}
+.container .head a {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  align-items: center;
+  margin: 5px;
+}
+.container .head .lang div {
+background-color: transparent;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .fit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.banner .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.banner .box .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner .box .heading h2 {
+  font-size: 50px;
+  color: white;
+  letter-spacing: 2px;
+  width: 80%;
+}
+.banner .box .heading p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  padding: 13px 0; /* top right button left */
+  padding-bottom: 10px;
+}
+.banner .box .search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.banner .box .search input {
+  font-size: 16px;
+  background-color: rgba(22, 22, 22, 0.7);
+  border: 1px solid #8c8c8c;
+  outline: none;
+  color: white;
+  border-radius: 2px;
+  padding: 8px 8px 8px;
+  min-width: 450px;
+  height: 50px;
+  align-items: center;
+}
+.banner .box .search a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  background-color: red;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  font-size: 26px;
+  line-height: 50px;
+  min-width: 200px;
+  padding: 0 30px;
+  margin: 5px;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(to bottom, black, transparent);
+  z-index: 1;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 1;
+}
+/*------------------------------------------------------------------------------------------------------*/
+                                           
+                                          /* section two*/
+
+/*------------------------------------------------------------------------------------------------------*/
+.part1 {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+  /* border-bottom: 10px solid #353535f6;
+  border-top: 10px solid #111;*/
+}
+.vid {
+  position: relative;
+}
+.vid video {
+  position: absolute;
+  top: 80px;
+  left: 69px;
+  z-index: -1;
+}
+.border {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+  background-color: rgb(35, 35, 35);
+}
+.border2 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -37.5rem;
+  background-color: rgb(35, 35, 35);
+}
+.text h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+.text p {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+/*------------------------------------------------------------------------------------------------------*/
+                                           
+                                          /* section three*/
+
+/*------------------------------------------------------------------------------------------------------*/
+.part3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.part3 .img {
+  position: relative;
+}
+.part3 .img .img1 {
+  width: 95%;
+}
+.part3 .img .box {
+  width: 55%;
+  position: absolute;
+  background: black;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  bottom: 8%;
+  left: 20%;
+}
+.border3 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -78.5rem;
+  background-color: rgb(35, 35, 35);
+}
+.part3 .img .box .anim {
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: -2px;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  background-size: 100%;
+  content: "";
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 50px;
+  margin-top: 18px;
+}
+.t .t1 {
+  color: white;
+  padding: 20px 20px 0px;
+}
+.t p {
+  color: #0071eb;
+  margin: -15px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.text2 h2 {
+  width: 800px;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+
+}
+.text2 p {
+  width: 500px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+/*------------------------------------------------------------------------------------------------------*/
+                                           
+                                          /* section four*/
+
+/*------------------------------------------------------------------------------------------------------*/
+.border4 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -115.5rem;
+  background-color: rgb(35, 35, 35);
+}
+.part4 {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.part4 .vid4 img {
+  position: relative;
+}
+.part4 .vid4 video {
+  position: absolute;
+  margin-top:33px ;
+  left: 62%;
+  
+  z-index: -1;
+}
+.part4 .text4 {
+  position: relative;
+  left: 8%;
+  bottom: 5%;
+  
+}
+.part4 .text4 h2 {
+  width: 500px;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+
+}
+.part4 .text4 p {
+  width: 550px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+/*------------------------------------------------------------------------------------------------------*/
+                                           
+                                          /* section five*/
+
+/*------------------------------------------------------------------------------------------------------*/
+.part5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 50px;
+}
+.part5 .img {
+  position: relative;
+  left: 5%;
+}
+.part5 .text5 h2 {
+  width: 100%;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}  
+.part5 .text5 p {
+  width: 600px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+.border5 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -150.5rem;
+  background-color: rgb(35, 35, 35);
+}
+/*------------------------------------------------------------------------------------------------------*/
+                                           
+                                          /* section six*/
+
+/*------------------------------------------------------------------------------------------------------*/
+.part6 {  
+  height: 500px;
+}
